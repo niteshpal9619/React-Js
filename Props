@@ -1,0 +1,30 @@
+App.js
+
+import "./styles.css";
+import Video from "./Video.js";
+
+export default function App() {
+  return (
+    <div className="App">
+      <Video title="React JS Tutorial" Cname="Red" FColor="white"></Video>
+      <Video title="Node JS Tutorial" Cname="blue" FColor="white"></Video>
+      <Video title="MongoDB Tutorial" Cname="Green" FColor="white"></Video>
+    </div>
+  );
+}
+
+Video.js
+
+import "./Video.css";
+
+function Video({ title, Cname, FColor }) {
+  return (
+    <>
+      <div>
+        <h3 style={{ backgroundColor: Cname, color: FColor }}>{title}</h3>
+        <img src={"https://placekitten.com/240/160"} alt="One" />
+      </div>
+    </>
+  );
+}
+export default Video;
