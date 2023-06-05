@@ -1,3 +1,5 @@
+Prop are use for passing value from Patent Component to Chield components 
+
 App.js
 
 import "./styles.css";
